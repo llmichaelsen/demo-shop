@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="row no-gutters">
+                <div class="col-4 ">
+                    <div class="bg-red">
+                        <a href="">
+                            < Alterar forma de pagamento</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="bg-white">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Carrinho</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Pagamento</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Confirmação</a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <form>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Número do cartão</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Nome (igual ao cartão)</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <div class="row">
+                                <div class="col-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Validade</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-6">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>CVV</mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <mat-form-field>
+                                <mat-select [(ngModel)]="method" [ngModelOptions]="{standalone: true}">
+                                    <mat-option [value]="1">12x de R$1.000,00 sem juros</mat-option>
+                                    <mat-option [value]="2">12x de R$1.000,00 sem juros</mat-option>
+                                    <mat-option [value]="3">12x de R$1.000,00 sem juros</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            dfg
+        </div>
+    </div>
+</div>
